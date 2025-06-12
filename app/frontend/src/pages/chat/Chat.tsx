@@ -4,7 +4,7 @@
 import { useRef, useState, useEffect } from "react";
 import { Checkbox, Panel, DefaultButton, TextField, SpinButton, Separator, Toggle, Label } from "@fluentui/react";
 import Switch from 'react-switch';
-import { GlobeFilled, BuildingMultipleFilled, AddFilled, ChatSparkleFilled } from "@fluentui/react-icons";
+import { GlobeFilled, BuildingMultipleFilled, AddFilled, ChatSparkleFilled, VehicleShipFilled } from "@fluentui/react-icons";
 import { ITag } from '@fluentui/react/lib/Pickers';
 
 import styles from "./Chat.module.css";
@@ -353,14 +353,14 @@ const Chat = () => {
                             {activeChatMode == ChatMode.WorkOnly ? 
                                 <div>
                                     <div className={styles.chatEmptyStateHeader}> 
-                                        <BuildingMultipleFilled fontSize={"100px"} primaryFill={"rgba(27, 74, 239, 1)"} aria-hidden="true" aria-label="Chat with your Work Data logo" />
+                                        <VehicleShipFilled fontSize={"100px"} primaryFill={"rgba(27, 74, 239, 1)"} aria-hidden="true" aria-label="Chat with your Work Data logo" />
                                         </div>
                                     <h1 className={styles.chatEmptyStateTitle}>Chat with your work data</h1>
                                 </div>
                             : activeChatMode == ChatMode.WorkPlusWeb ?
                                 <div>
                                     <div className={styles.chatEmptyStateHeader}> 
-                                        <BuildingMultipleFilled fontSize={"80px"} primaryFill={"rgba(27, 74, 239, 1)"} aria-hidden="true" aria-label="Chat with your Work and Web Data logo" /><AddFilled fontSize={"50px"} primaryFill={"rgba(0, 0, 0, 0.7)"} aria-hidden="true" aria-label=""/><GlobeFilled fontSize={"80px"} primaryFill={"rgba(24, 141, 69, 1)"} aria-hidden="true" aria-label="" />
+                                        <VehicleShipFilled fontSize={"80px"} primaryFill={"rgba(27, 74, 239, 1)"} aria-hidden="true" aria-label="Chat with your Work and Web Data logo" /><AddFilled fontSize={"50px"} primaryFill={"rgba(0, 0, 0, 0.7)"} aria-hidden="true" aria-label=""/><GlobeFilled fontSize={"80px"} primaryFill={"rgba(24, 141, 69, 1)"} aria-hidden="true" aria-label="" />
                                     </div>
                                     <h1 className={styles.chatEmptyStateTitle}>Chat with your work and web data</h1>
                                 </div>
@@ -373,7 +373,7 @@ const Chat = () => {
                                 </div>
                             }
                             <span className={styles.chatEmptyObjectives}>
-                                <i>Information Assistant uses AI. Check for mistakes.   </i><a href="https://github.com/microsoft/PubSec-Info-Assistant/blob/main/docs/transparency.md" target="_blank" rel="noopener noreferrer">Transparency Note</a>
+                                <i>chAIbot uses AI. Check for mistakes.   </i><a href="https://github.com/microsoft/PubSec-Info-Assistant/blob/main/docs/transparency.md" target="_blank" rel="noopener noreferrer">Transparency Note</a>
                             </span>
                             {activeChatMode != ChatMode.Ungrounded &&
                                 <div>
@@ -430,7 +430,7 @@ const Chat = () => {
                         {activeChatMode == ChatMode.WorkPlusWeb && (
                             <div className={styles.chatInputWarningMessage}> 
                                 {defaultApproach == Approaches.ReadRetrieveRead && 
-                                    <div>Questions will be answered by default from Work <BuildingMultipleFilled fontSize={"20px"} primaryFill={"rgba(27, 74, 239, 1)"} aria-hidden="true" aria-label="Work Data" /></div>}
+                                    <div>Questions will be answered by default from Work <VehicleShipFilled fontSize={"20px"} primaryFill={"rgba(27, 74, 239, 1)"} aria-hidden="true" aria-label="Work Data" /></div>}
                                 {defaultApproach == Approaches.ChatWebRetrieveRead && 
                                     <div>Questions will be answered by default from Web <GlobeFilled fontSize={"20px"} primaryFill={"rgba(24, 141, 69, 1)"} aria-hidden="true" aria-label="Web Data" /></div>
                                 }

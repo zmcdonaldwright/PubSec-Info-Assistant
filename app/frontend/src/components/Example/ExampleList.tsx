@@ -11,9 +11,9 @@ export type ExampleModel = {
 };
 
 const EXAMPLES: ExampleModel[] = [
-    { text: "Are there any radio telescopes in Australia?", value: "Are there any radio telescopes in Australia?" },
-    { text: "What are Microsoft's primary sources of revenue?", value: "What are Microsoft's primary sources of revenue?" },
-    { text: "What are some flavors of Breyers?", value: "What are some flavors of Breyers?" }
+    { text: "Is HMNZS Aotearoa faster than HMNZS Te Kaha?", value: "Is HMNZS Aotearoa faster than HMNZS Te Kaha?" },
+    { text: "What are the privileged access controls outlined in the NZISM?", value: "What are the privileged access controls outlined in the NZISM?" },
+    { text: "What are some feature differences between SQL Server 2022 editions?", value: "What are some feature differences between SQL Server 2022 editions?" }
 ];
 
 interface Props {

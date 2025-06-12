@@ -13,7 +13,8 @@ export type ExampleModel = {
 const EXAMPLES: ExampleModel[] = [
     { text: "Is HMNZS Aotearoa faster than HMNZS Te Kaha?", value: "Is HMNZS Aotearoa faster than HMNZS Te Kaha?" },
     { text: "What are the privileged access controls outlined in the NZISM?", value: "What are the privileged access controls outlined in the NZISM?" },
-    { text: "What are some feature differences between SQL Server 2022 editions?", value: "What are some feature differences between SQL Server 2022 editions?" }
+    { text: "What are some feature differences between SQL Server 2022 editions?", value: "What are some feature differences between SQL Server 2022 editions?" },
+    { text: "What Kiwisaver benefits does NZDF provide?", value: "What Kiwisaver benefits does NZDF provide?" }
 ];
 
 interface Props {
